@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import TimerScreen from "./src/screens/Timer/TimerScreen";
 import HomePage from "./src/screens/homepage/HomePage";
+import SelectService from "./src/screens/CrossRideAssistance/SelectService";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -12,6 +13,7 @@ function HomeStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomePage" component={HomePage} />
+      <Stack.Screen name="SelectService" component={SelectService} />
     </Stack.Navigator>
   );
 }
